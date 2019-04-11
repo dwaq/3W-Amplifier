@@ -37,28 +37,6 @@ F 3 "" H 4000 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
-U 1 1 5B734A03
-P 5150 3800
-F 0 "R4" V 4943 3800 50  0000 C CNN
-F 1 "0Ω" V 5034 3800 50  0000 C CNN
-F 2 "NewFootPrint:Resistor" V 5080 3800 50  0001 C CNN
-F 3 "~" H 5150 3800 50  0001 C CNN
-	1    5150 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5B734A5F
-P 7700 4150
-F 0 "R2" V 7493 4150 50  0000 C CNN
-F 1 "0Ω" V 7600 4150 50  0000 C CNN
-F 2 "NewFootPrint:Resistor" V 7630 4150 50  0001 C CNN
-F 3 "~" H 7700 4150 50  0001 C CNN
-	1    7700 4150
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C2
 U 1 1 5B734BB0
 P 5100 3450
@@ -229,8 +207,6 @@ Wire Wire Line
 Wire Wire Line
 	7200 4100 7200 4150
 Wire Wire Line
-	7200 4150 7550 4150
-Wire Wire Line
 	7200 3900 7700 3900
 Wire Wire Line
 	7700 4250 8650 4250
@@ -311,8 +287,6 @@ Connection ~ 7350 5000
 Wire Wire Line
 	7350 5000 7500 5000
 Wire Wire Line
-	7200 3500 7450 3500
-Wire Wire Line
 	4000 3600 4000 4000
 Wire Wire Line
 	4000 5000 4000 4300
@@ -360,12 +334,7 @@ F 3 "~" H 3700 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 3800 3850 3800
-Wire Wire Line
 	7500 4750 7500 5000
-Connection ~ 7750 3500
-Wire Wire Line
-	7750 3500 7750 2400
 Text Label 4700 2400 0    50   ~ 0
 VDD
 Text Label 3250 5000 0    50   ~ 0
@@ -389,8 +358,6 @@ VOLUME
 Wire Wire Line
 	6200 4350 6200 3400
 Wire Wire Line
-	5300 3800 5350 3800
-Wire Wire Line
 	5350 3800 5350 4000
 Wire Wire Line
 	4700 4150 4750 4150
@@ -398,8 +365,6 @@ Wire Wire Line
 	4750 4150 4750 3450
 Wire Wire Line
 	6050 3600 6050 3450
-Wire Wire Line
-	6050 3450 5950 3450
 Wire Wire Line
 	4750 3450 4950 3450
 Wire Wire Line
@@ -427,36 +392,8 @@ F 3 "~" H 4500 4250 50  0001 C CNN
 	1    4500 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 3800 5950 4150
 Connection ~ 6200 5000
 Connection ~ 7250 5000
-$Comp
-L Device:R R5
-U 1 1 5BE8ED43
-P 5800 3450
-F 0 "R5" V 5593 3450 50  0000 C CNN
-F 1 "0Ω" V 5684 3450 50  0000 C CNN
-F 2 "NewFootPrint:Resistor" V 5730 3450 50  0001 C CNN
-F 3 "~" H 5800 3450 50  0001 C CNN
-	1    5800 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5BE8EDDB
-P 5950 4300
-F 0 "R6" H 5880 4254 50  0000 R CNN
-F 1 "0Ω" H 5880 4345 50  0000 R CNN
-F 2 "NewFootPrint:Resistor" V 5880 4300 50  0001 C CNN
-F 3 "~" H 5950 4300 50  0001 C CNN
-	1    5950 4300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5650 3450 5250 3450
-Wire Wire Line
-	5950 4450 5950 5000
 Wire Wire Line
 	4750 5000 5650 5000
 Wire Wire Line
@@ -472,35 +409,7 @@ Wire Wire Line
 	7700 3900 7700 4250
 Connection ~ 8400 4150
 Wire Wire Line
-	7850 4150 8400 4150
-Wire Wire Line
 	6200 5000 7250 5000
-$Comp
-L Device:R R7
-U 1 1 5BF2155E
-P 3200 3350
-F 0 "R7" H 3130 3304 50  0000 R CNN
-F 1 "0Ω" H 3130 3395 50  0000 R CNN
-F 2 "NewFootPrint:Resistor" V 3130 3350 50  0001 C CNN
-F 3 "~" H 3200 3350 50  0001 C CNN
-	1    3200 3350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3200 3500 3200 3700
-$Comp
-L Device:R R8
-U 1 1 5BF27365
-P 7600 3500
-F 0 "R8" V 7500 3500 50  0000 R CNN
-F 1 "0Ω" V 7500 3650 50  0000 R CNN
-F 2 "NewFootPrint:Resistor" V 7530 3500 50  0001 C CNN
-F 3 "~" H 7600 3500 50  0001 C CNN
-	1    7600 3500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7750 3500 7750 4000
 Wire Wire Line
 	7200 4000 7750 4000
 Connection ~ 7750 4000
@@ -517,8 +426,6 @@ VDD
 Text Label 6050 3800 0    50   ~ 0
 GND
 Wire Wire Line
-	3200 2400 3200 3200
-Wire Wire Line
 	4000 2400 6200 2400
 Wire Wire Line
 	6200 3400 6200 2400
@@ -526,4 +433,21 @@ Connection ~ 6200 3400
 Connection ~ 6200 2400
 Wire Wire Line
 	6200 2400 7750 2400
+Wire Wire Line
+	7750 2400 7750 3500
+Wire Wire Line
+	3200 2400 3200 3700
+Wire Wire Line
+	3850 3800 5350 3800
+Wire Wire Line
+	5950 3800 5950 5000
+Wire Wire Line
+	5250 3450 6050 3450
+Wire Wire Line
+	7200 3500 7750 3500
+Connection ~ 7750 3500
+Wire Wire Line
+	7750 3500 7750 4000
+Wire Wire Line
+	7200 4150 8400 4150
 $EndSCHEMATC
