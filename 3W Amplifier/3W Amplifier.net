@@ -303,7 +303,7 @@
     (library (logical Device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib"))
     (library (logical New_Library)
-      (uri "C:/Users/brand/Desktop/3W Amplifier/New_Library.lib")))
+      (uri ${KIPRJMOD}/../New_Library.lib)))
   (nets
     (net (code 1) (name "Net-(A1-PadR)")
       (node (ref A1) (pin R))

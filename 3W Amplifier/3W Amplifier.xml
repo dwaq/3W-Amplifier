@@ -409,7 +409,7 @@
       <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
     </library>
     <library logical="New_Library">
-      <uri>C:/Users/brand/Desktop/3W Amplifier/New_Library.lib</uri>
+      <uri>${KIPRJMOD}/../New_Library.lib</uri>
     </library>
   </libraries>
   <nets>
