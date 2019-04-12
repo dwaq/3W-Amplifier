@@ -297,7 +297,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 3900 5800 3900
 Wire Wire Line
-	3700 3650 3700 2400
+	3700 3650 3700 2850
 Wire Wire Line
 	3700 2400 4000 2400
 Connection ~ 4000 2400
@@ -311,11 +311,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 4300 2700 5000
 Connection ~ 3700 5000
-Wire Wire Line
-	3000 3700 3200 3700
-Wire Wire Line
-	3200 2400 3700 2400
-Connection ~ 3700 2400
 $Comp
 L Device:R_POT R1
 U 1 1 5B763D59
@@ -424,8 +419,6 @@ Wire Wire Line
 Wire Wire Line
 	7750 2400 7750 3500
 Wire Wire Line
-	3200 2400 3200 3700
-Wire Wire Line
 	3850 3800 5350 3800
 Wire Wire Line
 	5950 3800 5950 5000
@@ -450,4 +443,53 @@ Wire Wire Line
 	5200 4150 5800 4150
 Wire Wire Line
 	5800 4150 5800 3900
+$Comp
+L Switch:SW_DIP_x02 SW?
+U 1 1 5CB0BC2B
+P 3300 2550
+F 0 "SW?" V 3346 2420 50  0000 R CNN
+F 1 "SW_DIP_x02" V 3255 2420 50  0000 R CNN
+F 2 "" H 3300 2550 50  0001 C CNN
+F 3 "" H 3300 2550 50  0001 C CNN
+	1    3300 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery BT?
+U 1 1 5CB0BF96
+P 2700 2700
+F 0 "BT?" H 2808 2746 50  0000 L CNN
+F 1 "Battery" H 2808 2655 50  0000 L CNN
+F 2 "" V 2700 2760 50  0001 C CNN
+F 3 "~" V 2700 2760 50  0001 C CNN
+	1    2700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5000 2300 5000
+Wire Wire Line
+	2300 5000 2300 3100
+Wire Wire Line
+	2300 3100 2700 3100
+Wire Wire Line
+	2700 3100 2700 2900
+Connection ~ 2700 5000
+Wire Wire Line
+	3200 2250 2700 2250
+Wire Wire Line
+	2700 2250 2700 2500
+Wire Wire Line
+	3050 3700 3200 3700
+Wire Wire Line
+	3200 3700 3200 2850
+Wire Wire Line
+	3300 2850 3700 2850
+Connection ~ 3700 2850
+Wire Wire Line
+	3700 2850 3700 2400
+Wire Wire Line
+	3700 2400 3700 2250
+Wire Wire Line
+	3700 2250 3300 2250
+Connection ~ 3700 2400
 $EndSCHEMATC
