@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source "D:\\Users\\z003ruax\\GitHub\\3W-Amplifier\\3W Amplifier\\3W Amplifier.sch")
-    (date "4/12/2019 10:11:56 AM")
-    (tool "Eeschema (5.0.2)-1")
+    (date "4/12/2019 10:53:32 AM")
+    (tool "Eeschema (5.1.0)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -282,6 +282,7 @@
         (pin (num 2) (name 2) (type input))))
     (libpart (lib Switch) (part SW_DIP_x02)
       (description "2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol")
+      (docs ~)
       (footprints
         (fp SW?DIP?x2*))
       (fields
