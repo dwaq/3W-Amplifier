@@ -1,4 +1,4 @@
-(module Switch-ES02MSABE (layer F.Cu) (tedit 5CB09581)
+(module Switch-ES02MSABE (layer F.Cu) (tedit 5CB0ECB8)
   (fp_text reference Ref** (at 0 0.5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -9,6 +9,4 @@
   (pad 2 smd oval (at 0 3.2) (size 4.8 1.6) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd oval (at 0 6.4) (size 4.8 1.6) (layers F.Cu F.Paste F.Mask))
   (pad 4 smd oval (at 0 9.6) (size 4.8 1.6) (layers F.Cu F.Paste F.Mask))
-  (pad M1 smd oval (at 0 -3.35) (size 4.8 1.6) (layers F.Cu F.Paste F.Mask))
-  (pad M2 smd oval (at 0 12.95) (size 4.8 1.6) (layers F.Cu F.Paste F.Mask))
 )
