@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L New_Library:PAM8008 U1
+L 3W-Amplifier-rescue:PAM8008-New_Library U1
 U 1 1 5B734811
 P 6800 3700
 F 0 "U1" H 6800 4265 50  0000 C CNN
@@ -94,12 +94,12 @@ $EndComp
 $Comp
 L Device:C C1
 U 1 1 5B734D22
-P 4900 4250
-F 0 "C1" V 4648 4250 50  0000 C CNN
-F 1 "100nf" V 4739 4250 50  0000 C CNN
-F 2 "NewFootPrint:Capacitor_1206" H 4938 4100 50  0001 C CNN
-F 3 "~" H 4900 4250 50  0001 C CNN
-	1    4900 4250
+P 5050 4150
+F 0 "C1" V 4798 4150 50  0000 C CNN
+F 1 "100nf" V 4889 4150 50  0000 C CNN
+F 2 "NewFootPrint:Capacitor_1206" H 5088 4000 50  0001 C CNN
+F 3 "~" H 5050 4150 50  0001 C CNN
+	1    5050 4150
 	0    1    1    0   
 $EndComp
 $Comp
@@ -297,10 +297,6 @@ Wire Wire Line
 Wire Wire Line
 	6400 3900 5800 3900
 Wire Wire Line
-	5800 3900 5800 4250
-Wire Wire Line
-	5800 4250 5050 4250
-Wire Wire Line
 	3700 3650 3700 2400
 Wire Wire Line
 	3700 2400 4000 2400
@@ -320,8 +316,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 2400 3700 2400
 Connection ~ 3700 2400
-Wire Wire Line
-	4700 4250 4750 4250
 $Comp
 L Device:R_POT R1
 U 1 1 5B763D59
@@ -339,7 +333,7 @@ Text Label 4700 2400 0    50   ~ 0
 VDD
 Text Label 3250 5000 0    50   ~ 0
 GND
-Text Label 5400 4250 0    50   ~ 0
+Text Label 5400 4150 0    50   ~ 0
 LINN
 Text Label 5350 3450 0    50   ~ 0
 RINN
@@ -360,15 +354,9 @@ Wire Wire Line
 Wire Wire Line
 	5350 3800 5350 4000
 Wire Wire Line
-	4700 4150 4750 4150
-Wire Wire Line
-	4750 4150 4750 3450
-Wire Wire Line
 	6050 3600 6050 3450
 Wire Wire Line
 	4750 3450 4950 3450
-Wire Wire Line
-	4700 4350 4750 4350
 Wire Wire Line
 	4750 4350 4750 5000
 Wire Wire Line
@@ -390,7 +378,7 @@ F 1 "AudioJack3_Ground" H 4500 4500 50  0000 C CNN
 F 2 "NewFootPrint:AUX CABLE" H 4500 4250 50  0001 C CNN
 F 3 "~" H 4500 4250 50  0001 C CNN
 	1    4500 4250
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Connection ~ 6200 5000
 Connection ~ 7250 5000
@@ -450,4 +438,16 @@ Wire Wire Line
 	7750 3500 7750 4000
 Wire Wire Line
 	7200 4150 8400 4150
+Wire Wire Line
+	4750 4350 4700 4350
+Wire Wire Line
+	4700 4250 4750 4250
+Wire Wire Line
+	4750 3450 4750 4250
+Wire Wire Line
+	4700 4150 4900 4150
+Wire Wire Line
+	5200 4150 5800 4150
+Wire Wire Line
+	5800 4150 5800 3900
 $EndSCHEMATC
