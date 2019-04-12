@@ -190,7 +190,6 @@ F 3 "~" H 4000 3450 50  0001 C CNN
 	1    4000 3450
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 2600 4300
 NoConn ~ 3000 3900
 NoConn ~ 3000 4000
 NoConn ~ 3000 4100
@@ -309,7 +308,7 @@ Connection ~ 4000 5000
 Wire Wire Line
 	2700 5000 3700 5000
 Wire Wire Line
-	2700 4300 2700 5000
+	2700 4300 2700 4550
 Connection ~ 3700 5000
 $Comp
 L Device:R_POT R1
@@ -479,8 +478,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 2250 2700 2500
 Wire Wire Line
-	3050 3700 3200 3700
-Wire Wire Line
 	3200 3700 3200 2850
 Wire Wire Line
 	3300 2850 3700 2850
@@ -492,4 +489,13 @@ Wire Wire Line
 Wire Wire Line
 	3700 2250 3300 2250
 Connection ~ 3700 2400
+Wire Wire Line
+	3000 3700 3200 3700
+Wire Wire Line
+	2600 4300 2600 4550
+Wire Wire Line
+	2600 4550 2700 4550
+Connection ~ 2700 4550
+Wire Wire Line
+	2700 4550 2700 5000
 $EndSCHEMATC
